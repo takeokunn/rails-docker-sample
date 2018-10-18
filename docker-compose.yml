@@ -18,4 +18,5 @@ services:
       MYSQL_ROOT_PASSWORD: P@ssw0rd
   redis:
     image: redis:latest
-    container_name: 'redis'
+  nginx:
+    image: nginx

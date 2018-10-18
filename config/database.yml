@@ -15,7 +15,7 @@ default: &default
   pool: 5
   username: root
   password: P@ssw0rd
-  host: localhost
+  host: db
   port: 3306
 
 development:
