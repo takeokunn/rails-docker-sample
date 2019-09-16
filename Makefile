@@ -9,3 +9,6 @@ install:
 run:
 	rm -rf tmp/pids/server.pid
 	docker-compose run --rm --service-ports web
+
+rubocop:
+	docker-compose run --rm web bundle exec rubocop --auto-correct
