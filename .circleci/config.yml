@@ -8,7 +8,7 @@ jobs:
           TEST_DATABASE_NAME: test_db
           TEST_DATABASE_USERNAME: sample
           TEST_DATABASE_PASSWORD: password
-          TEST_DATABASE_HOST: ci_db_container
+          TEST_DATABASE_HOST: 127.0.0.1
           TEST_DATABASE_PORT: 3306
       - image: mysql:5.6 # database image
         environment: # environment variables for database
