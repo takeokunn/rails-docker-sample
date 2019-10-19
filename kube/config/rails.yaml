@@ -1,0 +1,18 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  namespace: rails-docker-sample
+  name: rails-config
+data:
+  PORT: '3000'
+  RAILS_ENV: 'development'
+  DATABASE_HOST: "mysql"
+  DATABASE_PORT: '3306'
+  DATABASE_USERNAME: 'root'
+  DATABASE_PASSWORD: 'password'
+  DATABASE_NAME: 'rails_app_develop'
+  TEST_DATABASE_HOST: 'mysql'
+  TEST_DATABASE_PORT: '3306'
+  TEST_DATABASE_USERNAME: 'root'
+  TEST_DATABASE_PASSWORD: 'password'
+  TEST_DATABASE_NAME: 'rails_app_test'

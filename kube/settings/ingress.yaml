@@ -1,0 +1,14 @@
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  namespace: rails-docker-sample
+  name: nginx-ing
+spec:
+  rules:
+  - host: rails-docker-sample.xyz
+    http:
+      paths:
+      - path: /
+        backend:
+          serviceName: rails
+          servicePort: 3000
